@@ -1,0 +1,34 @@
+class TempatWisata {
+  // 2 fields
+  String nama;
+  String lokasi;
+
+  // Constructor menggunakan 'this' keyword
+  TempatWisata(this.nama, this.lokasi);
+
+  // Method 1 dengan 3 fields sebagai parameter
+  void deskripsiWisata(String deskripsi, String jamBuka, String hargaTiket) {
+    print("Deskripsi Wisata: $deskripsi");
+    print("Jam Buka: $jamBuka");
+    print("Harga Tiket: $hargaTiket");
+  }
+
+  // Method 2 dengan 3 fields sebagai parameter
+  void informasiTambahan(String fasilitas, String rating, String jenisWisata) {
+    print("Fasilitas: $fasilitas");
+    print("Rating: $rating");
+    print("Jenis Wisata: $jenisWisata");
+  }
+}
+
+void main() {
+  // Membuat objek TempatWisata
+  var wisata1 = TempatWisata('Pantai Kuta', 'Bali');
+
+  // Memanggil method deskripsiWisata
+  wisata1.deskripsiWisata(
+      'Pantai indah dengan pasir putih', '08:00 - 18:00', 'Rp 20.000');
+
+  // Memanggil method informasiTambahan
+  wisata1.informasiTambahan('Parkir, Restoran, Toilet', '4.5', 'Pantai');
+}
